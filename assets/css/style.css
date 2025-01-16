@@ -556,4 +556,56 @@ footer ._kl_de_w h3 {
   margin: 0 0 20px 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+.whatsapp-icon {
+  width: 40px; /* Tamanho da imagem (ajuste conforme necessário) */
+  height: auto; /* Manter a proporção da imagem */
+  margin-right: 5px; /* Espaçamento à direita da imagem em relação ao texto */
+}
+
+.whatsapp-link {
+  display: inline-block;
+  color: #ebc763;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 1px solid #eebb2e;
+  text-align: center;
+  padding: 10px 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+  z-index: 9;
+  transition: 0.6s;
+  overflow: hidden;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  animation: pulse 1.5s infinite; /* Adicionando a animação pulsante */
+}
+
+/* Adicionando animação de hover */
+.whatsapp-link:hover {
+  background-color: #ffe6006b; /* Cor mais escura no hover */
+  color: #fff;
+  font-weight: bold;
+  animation: none; /* Desativando a animação pulsante no hover */
+}
+
+.whatsapp-link a {
+  display: block; /* Faz o <a> ocupar todo o espaço da div */
+  width: 100%; /* O <a> se ajusta à largura da div */
+  height: 100%; /* O <a> se ajusta à altura da div */
+  color: inherit; /* Herda a cor do elemento pai */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Definindo a animação pulsante */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
